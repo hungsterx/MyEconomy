@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/balancehistory_credit_label"
+            android:text="Credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/balancehistory_itemname_label"
+            android:layout_alignBottom="@+id/balancehistory_itemname_label"
+            android:layout_toRightOf="@+id/balancehistory_itemname_label"
+            android:layout_toEndOf="@+id/balancehistory_itemname_label"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp" />
+
+        <TextView
+            android:id="@+id/balancehistory_itemname_label"
+            android:text="Name"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Current balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentbalancelabel"
+            android:layout_alignBaseline="@+id/balancehistory_credit_label"
+            android:layout_alignBottom="@+id/balancehistory_credit_label"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/debitlabel"
+            android:layout_marginRight="47dp"
+            android:layout_marginEnd="47dp"
+            android:layout_alignBottom="@+id/currentbalancelabel"
+            android:layout_toLeftOf="@+id/currentbalancelabel"
+            android:layout_toStartOf="@+id/currentbalancelabel" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/balancehistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namelabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/pricelabel"/>
+
+    <TextView
+        android:text="Price"
+        android:layout_height="wrap_content"
+        android:id="@+id/pricelabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="96dp" />
+
+    <TextView
+        android:hint="Some name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemname"
+        android:layout_below="@+id/namelabel"
+        android:layout_toLeftOf="@+id/itemprice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:hint="0.00"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemprice"
+        android:layout_below="@+id/pricelabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datelabel"
+        android:layout_below="@+id/itemname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:hint="2016-01-01"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemdate"
+        android:layout_below="@+id/itemprice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
